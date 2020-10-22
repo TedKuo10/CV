@@ -128,10 +128,6 @@ table {
   border-spacing: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -146,13 +142,13 @@ table {
   text-align: left;
   font-size: 80px;
   line-height: 94px;
-  font-family: Roboto;
   margin-bottom: 17px;
   margin-top: 47px;
 }
 
 header img{
   margin-top: 48px;
+  display: block;
 }
 
 .topic{
@@ -162,18 +158,21 @@ header img{
 .title{
   font-size: 32px;
   line-height: 43px;
-  font-family: 'Noto Sans';
 }
 
 .subtitle{
   font-size: 24px;
   line-height: 28px;
-  font-family: Roboto;
   color: #A00404;
-  display: inline-block;
   margin-left: 16px;
-  padding-bottom: 7px;
-  /* vertical-align: top; */
+}
+
+.ff-r{
+  font-family: Roboto;
+}
+
+.ff-ns{
+  font-family: 'Noto Sans';
 }
 
 .mb{
@@ -186,4 +185,12 @@ header img{
 
 .mb-9{
   margin-bottom: 72px;
+}
+
+.mt{
+  margin-top: 8px;
+}
+
+.mt-2{
+  margin-top: 16px;
 }
