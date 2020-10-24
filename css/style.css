@@ -128,6 +128,7 @@ table {
   border-spacing: 0;
 }
 
+/* 區塊樣式 */
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -137,6 +138,11 @@ table {
   background: #415165;
 }
 
+footer{
+  background:#415165;
+}
+
+/* 區塊_標題樣式 */
 .profileName{
   border-bottom: 2px solid #000;
 }
@@ -159,24 +165,116 @@ header img{
   border-bottom: 1px solid #000;
 }
 
+.topic-skill{
+  width: 996px;
+  margin: 0 auto;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.topic-footer{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+footer .title{
+  text-align: center;
+}
+
+.skill .title{
+  font-size: 32px;
+  line-height: 45px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: 'Microsoft JhengHei';
+  text-align: center;
+}
+
 .title{
   font-size: 32px;
   line-height: 43px;
+}
+
+.subtitle-r{
+  color: #A00404;
+}
+
+.subtitle-w{
+  color: #FFFFFF;
 }
 
 .subtitle{
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
-  color: #A00404;
   margin-left: 16px;
 }
 
-.content-p{
+/* 區塊_內容樣式 */
+.skill-content{
+  margin: 0 auto;
+  width: 996px;
+  padding-bottom: 36px;
+}
+
+.skill .list{
+  width: 20%;
+  margin: 0 auto;
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+}
+
+.skill .list li{
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.exp .list{
+  width: 642px;
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+  margin-left: 24px;
+}
+
+.exp .list li{
+  margin-bottom: 24px;
+}
+
+.exp .list img{
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 8px 0;
+}
+
+.exp .list p{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer-inner .list{
+  text-align: center;
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-inner img{
+  vertical-align: center;
+  margin-right: 24px;
+}
+
+.footer-inner .list li{
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+ul li{
   font-size: 24px;
   line-height: 36px;
 }
 
+
+/* 共用_字體樣式 */
 .ff-r{
   font-family: Roboto;
 }
@@ -185,6 +283,7 @@ header img{
   font-family: 'Noto Sans';
 }
 
+/* 共用_margin/padding樣式 */
 .mb{
   margin-bottom: 8px;
 }
@@ -195,6 +294,10 @@ header img{
 
 .mb-3{
   margin-bottom: 24px;
+}
+
+.mb-5{
+  margin-bottom: 40px;
 }
 
 .mb-6{
@@ -211,4 +314,12 @@ header img{
 
 .mt-2{
   margin-top: 16px;
+}
+
+.mt-3{
+  margin-top: 24px;
+}
+
+.pt-3{
+  padding-top: 24px;
 }
