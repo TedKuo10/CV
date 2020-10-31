@@ -1,3 +1,4 @@
-# CV
+# 網頁切版實作
 
-https://tedkuo10.github.io/CV/index.html
+Week1：個人履歷
+https://tedkuo10.github.io/hexschool-layout202010/week1/index.html
