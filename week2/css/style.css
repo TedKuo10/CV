@@ -111,9 +111,48 @@ body{
     align-items: center;
 }
 
+.works, .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 元件*/
 img{
     display: block;
 }
+
+.pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pic li:nth-child(1){
+    margin-left: 209px;
+    margin-bottom: 40px;
+}
+
+.pic li:nth-last-child(1){
+    margin-bottom: 160px;
+}
+
+.pic-works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+.pic-works p{
+    margin-top: 16px;
+    margin-bottom: 56px;
+}
+
+.contact a:nth-last-child(1){
+    margin-bottom: 80px;
+}
+
 
 /* 內容樣式 */
 .en_single{
@@ -129,6 +168,18 @@ img{
 .ch_multiple{
     font-size: 20px;
     line-height: 30px;
+}
+
+.ch_single{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.contact-info{
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .text-medium{
@@ -184,6 +235,10 @@ img{
 
 .m-b-7{
     margin-bottom: 56px;
+}
+
+.m-b_64{
+    margin-bottom: 64px;
 }
 
 .m-t-8{
