@@ -105,6 +105,15 @@ body{
     margin-right: 16px;
 }
 
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    display: block;
+}
 
 /* 內容樣式 */
 .en_single{
@@ -117,15 +126,20 @@ body{
     line-height: 36px;
 }
 
-.fwm{
+.ch_multiple{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.text-medium{
     font-weight: 500;
 }
 
-.fwb{
+.text-bold{
     font-weight: 700;
 }
 
-.fwh{
+.text-heavy{
     font-weight: 900;
 }
 
@@ -139,13 +153,17 @@ body{
     line-height: 75px;
 }
 
-.text_center{
+.text-center{
     text-align: center;
 }
 
 /* padding, margin */
 .m-b-1{
     margin-bottom: 8px;
+}
+
+.m-b-2{
+    margin-bottom: 16px;
 }
 
 .m-b-3{
