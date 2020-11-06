@@ -1,1 +1,67 @@
 @import "reset.css";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 主體 CSS */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* padding: 30px 88px 0 88px; */
+}
+
+.logo{
+    margin-top: 30px;
+}
+
+.logo a{
+    display: block;
+    width: 80px;
+    height: 108px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+
+.menu{
+    display: flex;
+    padding-top: 10px;
+}
+
+
+
+
+
+/* color style */
+.color-primary{
+    background: #AA0601;
+    color: #ffffff;
+}
+
+.color-accent{
+
+}
+
+
+/* 768~992px 都享有 Pad 樣式 */
+@media (max-width: 992px) {
+}
+
+/* 767px 手機以下 */
+@media (max-width: 767px) {
+}
