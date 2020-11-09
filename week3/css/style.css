@@ -191,7 +191,7 @@ img {
     text-decoration: none;
 }
 
-.policy li:nth-last-child(1){
+.policy li:nth-last-child(1) .logo{
     display: none;
 }
 
@@ -324,6 +324,7 @@ img {
 
     .policy{
         flex-direction: column;
+        width: 100%;
     }
 
     .policy li{
@@ -331,9 +332,19 @@ img {
         margin-bottom: 8px;
     }
 
-    .policy .logo{
+    .policy li:nth-last-child(1) .logo{
         display: block;
+        width: 46px;
+        height: 28px;
+        margin: 0;
     }
+
+    .policy li:nth-last-child(1){
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
 
 }
 
