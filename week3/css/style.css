@@ -10,29 +10,30 @@ img {
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
 /* 主體 CSS */
 
+.body{
+    font-family: 'Noto Sans';
+}
+
 .header{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* padding: 30px 88px 0 88px; */
+    align-items: center;
+    padding: 30px 88px;
 }
 
 .logo{
-    margin-top: 30px;
-}
-
-.logo a{
     display: block;
     width: 80px;
-    height: 108px;
+    height: 48px;
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
+    background-position: center center;
     text-indent: 101%;
     overflow: hidden;
     /* white-space: nowrap; */
@@ -40,23 +41,247 @@ img {
 
 .menu{
     display: flex;
-    padding-top: 10px;
+}
+
+.menu a{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.menu li{
+    margin-left: 64px;
+}
+
+@media (max-width: 992px) {
+
+    .header{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .menu li{
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .header{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .logo{
+        width: 48px;
+        height: 30px;
+        background-size: cover;
+        margin: 10px 0;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .menu li{
+        width: 50%;
+        margin-left: 0;
+        border: 1px solid #ffffff;
+        text-align: center;
+        padding: 8px 0;
+    }
+
 }
 
 
+.footer{
+    padding-top: 36px;
+    padding-bottom: 28px;
+}
 
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footer-menu{
+    display: flex;
+}
+
+.footer-menu li{
+    margin-right: 48px;
+}
+
+.footer-menu a{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.social{
+    display: flex;
+}
+
+.social li{
+    margin-left: 42px;
+}
+
+.footer-contact{
+    margin-top: 18px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.contact li{
+    margin-bottom: 19px;
+    display: flex;
+}
+
+.icon-phone{
+    margin-right: 24px;
+}
+
+.icon-mail{
+    margin-right: 12px;
+}
+
+.contact a{
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 48px;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+.footer-legal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infor{
+    display: flex;
+    align-items: center;
+}
+
+.copyright{
+    margin-left: 38px;
+    font-family: Roboto;
+}
+
+.policy{
+    display: flex;
+}
+
+.policy li{
+    margin-left: 62px;
+}
+
+.policy a{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+
+    .footer{
+        padding: 40px 39px;
+    }
+
+    .footer-menu li{
+        margin-right: 40px;
+    }
+
+    .footer-menu a{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .social li{
+        margin-left: 24px;
+    }
+
+    .social img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-contact{
+        margin-top: 26px;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+
+    .icon-phone{
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+    }
+
+    .icon-mail{
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .contact li{
+        margin-bottom: 8px;
+    }
+
+    .contact a{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .copyright{
+        margin-left: 0;
+        line-height: 21px;
+    }
+
+    .policy li{
+        margin-left: 24px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .footer{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 24px;
+        padding-bottom: 21px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-menu{
+        display: none;
+    }
+
+    .logo{
+        display: block;
+    }
+
+}
 
 /* color style */
+
 .color-primary{
     background: #AA0601;
     color: #ffffff;
 }
-
-.color-accent{
-
-}
-
 
 /* 768~992px 都享有 Pad 樣式 */
 @media (max-width: 992px) {
