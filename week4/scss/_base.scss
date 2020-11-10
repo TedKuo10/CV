@@ -1,3 +1,32 @@
-body{
-    font-family: $font-family-base;
+//_base.scss 全站設定
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+img {
+  max-width: $w-100;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  @include pad(){
+      max-width: 690px;
+  }
+  @include mobile(){
+      max-width: 345px;
+  }
+}
+
+

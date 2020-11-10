@@ -1,0 +1,10 @@
+
+
+
+// box model related
+@for $i from 1 through 8 {
+  .mb-#{$i} {
+    margin-bottom: 8px * $i;
+  }
+}
+
