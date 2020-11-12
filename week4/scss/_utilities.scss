@@ -1,6 +1,3 @@
-
-
-
 // box model related
 @for $i from 1 through 8 {
   .mb-#{$i} {
@@ -8,3 +5,32 @@
   }
 }
 
+@for $i from 1 through 8 {
+  .pl-#{$i} {
+    padding-left: 8px * $i;
+  }
+}
+
+@include pad{
+  @for $i from 1 through 8 {
+    .pl-md-#{$i} {
+      padding-left: 8px * $i;
+    }
+  }
+}
+
+
+
+// color
+.bg-primary{
+  background: $color-primary;
+}
+
+
+
+// commonly used
+@mixin u-hide-text {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

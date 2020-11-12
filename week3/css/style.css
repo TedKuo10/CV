@@ -48,6 +48,11 @@ img {
     font-size: 20px;
     line-height: 28px;
     text-decoration: none;
+    display: block;
+    transition: all 0.5s;
+}
+.menu a:hover{
+    color: lightgray;
 }
 
 .menu li{
