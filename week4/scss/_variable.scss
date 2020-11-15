@@ -4,13 +4,13 @@
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(https://fonts.googleapis.com/css?family=Roboto);
+  font-family: 'Roboto';
+  src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 }
 
 // font related
 $font-family-base: "Noto Sans", sans-serif;
-$font-family-roboto: "Roboto";
+$font-family-roboto: 'Roboto';
 
 $font-size-base: 1rem;
 $font-size-x-sm: $font-size-base * 0.875; // 14px

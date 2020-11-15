@@ -2,4 +2,5 @@
 @import "reset"; // css reset
 @import "base"; // 全站
 @import "utilities"; // 通用:顏色, 間距, flex
-@import "layout";
+@import "layout/nav";
+@import "layout/footer";
