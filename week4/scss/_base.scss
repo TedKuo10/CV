@@ -18,6 +18,44 @@ body {
   line-height: $line-height-base;
 }
 
+h1, .h1{
+  font-size: $font-size-xx-l; // 64
+  @include pad{
+    font-size: $font-size-x-l;
+  }
+  @include mobile{
+    font-size: $font-size-larger;
+  }
+}
+
+h2, .h2{
+  font-size: $font-size-x-l; // 64
+  @include pad{
+    font-size: $font-size-larger;
+  }
+  @include mobile{
+    font-size: $font-size-l;
+  }
+}
+
+h3, .h3{
+  font-size: 36px; // 36
+  @include pad{
+    font-size: $font-size-m;
+  }
+  @include mobile{
+    font-size: $font-size-base;
+  }
+}
+
+h4, h4{
+  font-size: $font-size-l;
+
+  @include pad{
+    font-size: $font-size-m;
+  }
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;

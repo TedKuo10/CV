@@ -1,9 +1,17 @@
-// box model related
+// spacing related
 @for $i from 1 through 8 {
   .mb-#{$i} {
     margin-bottom: 8px * $i;
   }
 }
+@include pad{
+  @for $i from 1 through 8 {
+    .mb-md-#{$i} {
+      margin-bottom: 4px * $i;
+    }
+  }
+}
+
 
 @for $i from 1 through 8 {
   .pl-#{$i} {
@@ -19,11 +27,13 @@
   }
 }
 
-
-
 // color
 .bg-primary{
   background: $color-primary;
+}
+
+.bg-primary-light{
+  background: $color-primary-light;
 }
 
 
@@ -32,6 +42,12 @@
   font-family: $font-family-roboto;
 }
 
+// font weight
+@for $i from 1 through 9 {
+  .fw-#{$i} {
+    font-weight: 100 * $i;
+  }
+}
 
 
 // commonly used
@@ -39,4 +55,10 @@
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@mixin background-image-normal{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
