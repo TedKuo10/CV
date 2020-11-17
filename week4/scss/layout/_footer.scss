@@ -63,6 +63,14 @@
         @include mobile{
             padding-top: 24px;
         }
+
+        @include x-mobile{
+            padding-left: 18px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 
     &__contact-list{
@@ -125,6 +133,10 @@
 
         @include mobile{
             font-size: $font-size-base;
+        }
+
+        @include x-mobile{
+            font-size: $font-size-x-sm;
         }
     }
 

@@ -27,6 +27,10 @@ body {
   @include mobile(){
       max-width: 345px;
   }
+
+  @include x-mobile(){
+      max-width: 290px;
+  }
 }
 
 

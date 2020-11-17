@@ -49,3 +49,22 @@ $w-100: 100%;
     @content;
   }
 }
+
+@mixin x-mobile{
+  @media (max-width: 321px) {
+    @content;
+  }
+}
+
+
+// $breakpoints: (
+//   'mobile' : (max-width:111px),
+//   'tablet' : (max-width:222px)
+// );
+
+// @mixin respond-to($breakpoint) {
+//   $queries: map-get($breakpoints, $breakpoint);
+//   @media($queries) {
+//     @content;
+//   }
+// }

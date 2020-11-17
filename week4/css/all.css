@@ -98,6 +98,12 @@ body {
   }
 }
 
+@media (max-width: 321px) {
+  .container {
+    max-width: 290px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 8px;
 }
@@ -369,6 +375,16 @@ body {
   }
 }
 
+@media (max-width: 321px) {
+  .footer__social-link {
+    padding-left: 18px;
+  }
+  .footer__social-link img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 @media (max-width: 767px) {
   .footer__contact-list {
     margin-top: 24px;
@@ -442,6 +458,12 @@ body {
 @media (max-width: 767px) {
   .footer__contact-link {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .footer__contact-link {
+    font-size: 0.875rem;
   }
 }
 
