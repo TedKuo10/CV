@@ -41,15 +41,28 @@
     }
 
     &__item{
-        width: 18%;
+        width: 25%;
+        padding: 0 calc((25% - 208px) / 2);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
     &__img{
-        vertical-align: initial
+        width: 100px;
+        height: 100px;
+        position: relative;
+
+        img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
     }
+
 
 }
