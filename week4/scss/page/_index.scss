@@ -4,8 +4,11 @@
     height: 840px;
     @include background-image-normal;
 
-    @include mobile{
+    @include pad{
         background-image: url(../images/banner-sm.png);
+    }
+
+    @include mobile{
         height: 394px;
     }
 
@@ -18,11 +21,9 @@
     }
 
     &__subtitle{
-        color: $color-primary-dark;
     }
 
     &__title{
-        color: $color-primary-dark;
     }
 }
 
@@ -34,10 +35,29 @@
         align-items: center;
     }
 
+    &__title{
+        margin-bottom: 60px;
+
+        @include pad{
+            margin-bottom: 32px;
+        }
+
+        @include mobile{
+            margin-bottom: 20px;
+        }
+    }
+
     &__list{
         display: flex;
         justify-content: space-around;
         align-items: baseline;
+        flex-wrap: wrap;
+
+        @include pad{
+            flex-direction: row-reverse;
+            // flex-wrap: wrap-reverse;
+        }
+
     }
 
     &__item{
@@ -47,12 +67,27 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        @include pad{
+            width: 50%;
+            padding: 0 calc((50% - 237px) / 2);
+        }
+
+        @include mobile{
+            width: 100%;
+            padding: 0 calc((100% - 237px) / 2);
+        }
     }
 
     &__img{
         width: 100px;
         height: 100px;
         position: relative;
+
+        @include pad{
+            width: 80px;
+            height: 80px;
+        }
 
         img{
             position: absolute;
@@ -61,6 +96,20 @@
             right: 0;
             left: 0;
             margin: auto;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__content-title{
+        margin-bottom:4px;
+
+        @include pad{
+            margin-bottom: 8px;
         }
     }
 

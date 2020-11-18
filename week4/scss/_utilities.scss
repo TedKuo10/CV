@@ -5,7 +5,7 @@
   }
 }
 @include pad{
-  @for $i from 1 through 8 {
+  @for $i from 1 through 10 {
     .mb-md-#{$i} {
       margin-bottom: 4px * $i;
     }
@@ -27,6 +27,50 @@
   }
 }
 
+@for $i from 1 through 8 {
+  .pt-#{$i} {
+    padding-top: 8px * $i;
+  }
+}
+
+@include pad{
+  @for $i from 1 through 8 {
+    .pt-md-#{$i} {
+      padding-top: 8px * $i;
+    }
+  }
+}
+
+@include mobile{
+  @for $i from 1 through 8 {
+    .pt-sm-#{$i} {
+      padding-top: 4px * $i;
+    }
+  }
+}
+
+@for $i from 1 through 8 {
+  .pb-#{$i} {
+    padding-bottom: 8px * $i;
+  }
+}
+
+@include pad{
+  @for $i from 1 through 8 {
+    .pb-md-#{$i} {
+      padding-bottom: 8px * $i;
+    }
+  }
+}
+
+@include mobile{
+  @for $i from 1 through 8 {
+    .pb-sm-#{$i} {
+      padding-bottom: 4px * $i;
+    }
+  }
+}
+
 // color
 .bg-primary{
   background: $color-primary;
@@ -36,6 +80,9 @@
   background: $color-primary-light;
 }
 
+.txt-primary-dark{
+  color: $color-primary-dark;
+}
 
 // font family
 .font-roboto{
