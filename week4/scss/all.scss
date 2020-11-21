@@ -1,7 +1,8 @@
 @import "variable"; // variable
 @import "reset"; // css reset
+@import "mixin";
 @import "base"; // 全站
 @import "utilities"; // 通用:顏色, 間距, flex
 @import "layout/nav";
 @import "layout/footer";
-@import "page/index";
+@import "page/index/index";

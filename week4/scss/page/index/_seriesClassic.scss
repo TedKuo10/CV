@@ -1,0 +1,38 @@
+.seriesClassic{
+
+    &__title{
+        text-align: center;
+    }
+
+    &__list{
+
+    }
+
+    &__item{
+
+        display: flex;
+        align-items: stretch;
+
+        img{
+            width: 58%;
+        }
+        &:nth-child(1) span{
+            @include serisesClassisc-before("/week4/images/icon-diamond.svg");
+        }
+        &:nth-child(2) span{
+            @include serisesClassisc-before('/week4/images/icon-sun.svg');
+        }
+        &:nth-child(3) span{
+            @include serisesClassisc-before('/week4/images/icon-thunder.svg');
+        }
+
+    }
+
+    &__link{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        @include link-hover;
+    }
+
+}

@@ -84,6 +84,10 @@
   color: $color-primary-dark;
 }
 
+.txt-primary{
+  color: $color-primary;
+}
+
 // font family
 .font-roboto{
   font-family: $font-family-roboto;
@@ -94,18 +98,4 @@
   .fw-#{$i} {
     font-weight: 100 * $i;
   }
-}
-
-
-// commonly used
-@mixin u-hide-text {
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@mixin background-image-normal{
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }

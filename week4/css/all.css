@@ -478,6 +478,10 @@ h4, h4 {
   color: #650300;
 }
 
+.txt-primary {
+  color: #aa0601;
+}
+
 .font-roboto {
   font-family: "Roboto";
 }
@@ -1066,5 +1070,56 @@ h4, h4 {
   .feature__content-title {
     margin-bottom: 8px;
   }
+}
+
+.seriesClassic__title {
+  text-align: center;
+}
+
+.seriesClassic__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.seriesClassic__item img {
+  width: 58%;
+}
+
+.seriesClassic__item:nth-child(1) span::before {
+  content: url("/week4/images/icon-diamond.svg");
+  margin-right: 8px;
+  vertical-align: text-top;
+}
+
+.seriesClassic__item:nth-child(2) span::before {
+  content: url("/week4/images/icon-sun.svg");
+  margin-right: 8px;
+  vertical-align: text-top;
+}
+
+.seriesClassic__item:nth-child(3) span::before {
+  content: url("/week4/images/icon-thunder.svg");
+  margin-right: 8px;
+  vertical-align: text-top;
+}
+
+.seriesClassic__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seriesClassic__link:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=all.css.map */
