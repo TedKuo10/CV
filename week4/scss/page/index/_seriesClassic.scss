@@ -24,21 +24,51 @@
         display: flex;
         align-items: stretch;
 
+        @include mobile{
+            align-items: center;
+            justify-content: center;
+        }
+
         &:nth-child(1) span{
-            @include serisesClassisc-before("/week4/images/icon-diamond.svg");
+            @include serisesClassisc-before("/week4/images/icon-diamond.svg", 48px, 48px);
+
+            @include pad{
+                @include serisesClassisc-before("/week4/images/icon-diamond.svg", 32px, 32px);
+            }
+
+            @include mobile{
+                @include serisesClassisc-before("/week4/images/icon-diamond-white.svg", 32px, 32px);
+            }
         }
         &:nth-child(2) span{
-            @include serisesClassisc-before('/week4/images/icon-sun.svg');
+            @include serisesClassisc-before('/week4/images/icon-sun.svg', 48px, 48px);
+
+            @include pad{
+                @include serisesClassisc-before('/week4/images/icon-sun.svg', 32px, 32px);
+            }
+
+            @include mobile{
+                @include serisesClassisc-before('/week4/images/icon-sun-white.svg', 32px, 32px);
+            }
         }
         &:nth-child(3) span{
-            @include serisesClassisc-before('/week4/images/icon-thunder.svg');
+            @include serisesClassisc-before('/week4/images/icon-thunder.svg', 48px, 48px);
+
+            @include pad{
+                @include serisesClassisc-before('/week4/images/icon-thunder.svg', 32px, 32px);
+            }
+
+            @include mobile{
+                @include serisesClassisc-before('/week4/images/icon-thunder-white.svg', 32px, 32px);
+            }
         }
 
         $urls: '../images/product-1.png', '../images/product-2.png', '../images/product-3.png';
 
+        // 原本想要連 width, height 都能寫變數來帶入...
         @each $url in $urls {
             $i: index($urls , $url );
-            &:nth-child(#{$i}) div{
+            &:nth-child(#{$i}) .seriesClassic__img{
                 @include bg-images($url, 635px, 320px);
             }
         }
@@ -46,8 +76,17 @@
         @include pad{
             @each $url in $urls {
                 $i: index($urls , $url );
-                &:nth-child(#{$i}) div{
+                &:nth-child(#{$i}) .seriesClassic__img{
                     @include bg-images($url, 390px, 168px);
+                }
+            }
+        }
+
+        @include mobile{
+            @each $url in $urls {
+                $i: index($urls , $url );
+                &:nth-child(#{$i}) .seriesClassic__img{
+                    @include bg-images($url, 345px, 134px);
                 }
             }
         }
@@ -56,6 +95,9 @@
             // 請問這邊要怎麼寫，才能比較簡約繼承父父層 ?
             .seriesClassic__img{
                 margin-right: 30px;
+                @include mobile{
+                    margin: 0;
+                }
             }
         }
 
@@ -72,19 +114,21 @@
                     margin-right: 30px;
                 }
             }
-        }
-
-        @include mobile{
-            .seriesClassic__img{
-                margin: 0;
+            @include mobile{
+                .seriesClassic__img{
+                    margin: 0;
+                }
             }
         }
+
+
 
     }
 
     &__img{
         @include mobile{
             width: 100%;
+            position: relative;
         }
     }
 
@@ -103,8 +147,9 @@
         @include mobile{
             position: absolute;
             z-index: 1;
-            top: 50%;
-            left: 50%;
+            span{
+                color: #ffffff;
+            }
         }
     }
 

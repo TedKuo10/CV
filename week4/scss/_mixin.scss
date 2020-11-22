@@ -13,9 +13,16 @@
 
 
 // project
-@mixin  serisesClassisc-before($url){
+@mixin  serisesClassisc-before($url, $height, $weight){
     &::before{
-        content: url($url);
+        content: '';
+        height: $height;
+        width: $weight;
+        display: inline-block;
+        background-image: url($url);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
         margin-right: 8px;
         vertical-align: text-top;
         @content;
