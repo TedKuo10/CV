@@ -29,3 +29,11 @@
     }
 
 }
+
+@mixin bg-images($url, $width, $height){
+    background-image: url($url);
+    width: $width;
+    height: $height;
+    @include background-image-normal;
+    @content;
+}

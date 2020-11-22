@@ -2,6 +2,17 @@
 
     &__title{
         text-align: center;
+        margin-bottom: 60px;
+
+        @include pad{
+            margin-bottom: 32px;
+        }
+
+        @include mobile{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
     }
 
     &__list{
@@ -13,9 +24,6 @@
         display: flex;
         align-items: stretch;
 
-        img{
-            width: 58%;
-        }
         &:nth-child(1) span{
             @include serisesClassisc-before("/week4/images/icon-diamond.svg");
         }
@@ -26,6 +34,58 @@
             @include serisesClassisc-before('/week4/images/icon-thunder.svg');
         }
 
+        $urls: '../images/product-1.png', '../images/product-2.png', '../images/product-3.png';
+
+        @each $url in $urls {
+            $i: index($urls , $url );
+            &:nth-child(#{$i}) div{
+                @include bg-images($url, 635px, 320px);
+            }
+        }
+
+        @include pad{
+            @each $url in $urls {
+                $i: index($urls , $url );
+                &:nth-child(#{$i}) div{
+                    @include bg-images($url, 390px, 168px);
+                }
+            }
+        }
+
+        &:nth-child(odd){
+            // 請問這邊要怎麼寫，才能比較簡約繼承父父層 ?
+            .seriesClassic__img{
+                margin-right: 30px;
+            }
+        }
+
+        &:nth-child(even){
+            flex-direction: row-reverse;
+            .seriesClassic__img{
+                margin-left: 30px;
+            }
+
+            @include pad{
+                flex-direction: row;
+                .seriesClassic__img{
+                    margin-left: 0;
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        @include mobile{
+            .seriesClassic__img{
+                margin: 0;
+            }
+        }
+
+    }
+
+    &__img{
+        @include mobile{
+            width: 100%;
+        }
     }
 
     &__link{
@@ -33,6 +93,19 @@
         text-decoration: none;
         align-items: center;
         @include link-hover;
+
+        @include pad{
+            .h2{
+                font-size: 28px;
+            }
+        }
+
+        @include mobile{
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+        }
     }
 
 }

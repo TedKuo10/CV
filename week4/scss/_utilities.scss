@@ -93,6 +93,10 @@
   font-family: $font-family-roboto;
 }
 
+.font-style-italic{
+  font-style: italic;
+}
+
 // font weight
 @for $i from 1 through 9 {
   .fw-#{$i} {
