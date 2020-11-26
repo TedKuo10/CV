@@ -1,0 +1,40 @@
+
+.cobrand{
+    background-image: url(/week4/images/bg.png);
+    height: 743px;
+    @include background-image-normal;
+
+    &__title{
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+
+        $cobrand-imgs: '../images/product-8.png', '../images/product-9.png';
+
+        @each $img in $cobrand-imgs{
+            $i: index($cobrand-imgs, $img );
+            &:nth-child(#{$i}) .cobrand__link{
+                @include bg-images($img, 540px, 472px);
+
+            }
+        }
+
+    }
+
+    &__link{
+        display: inline-block;
+        filter: brightness(.8);
+        &:hover{
+            transition: all 0.5s;
+            filter: brightness(1);
+        }
+
+    }
+
+}

@@ -30,7 +30,7 @@
         }
 
         &:nth-child(1) span{
-            @include serisesClassisc-before("/week4/images/icon-diamond.svg", 48px, 48px);
+            @include serisesClassisc-before("/week4/images/icon-diamond.svg", 55px, 48px);
 
             @include pad{
                 @include serisesClassisc-before("/week4/images/icon-diamond.svg", 32px, 32px);
@@ -41,7 +41,7 @@
             }
         }
         &:nth-child(2) span{
-            @include serisesClassisc-before('/week4/images/icon-sun.svg', 48px, 48px);
+            @include serisesClassisc-before('/week4/images/icon-sun.svg', 55px, 48px);
 
             @include pad{
                 @include serisesClassisc-before('/week4/images/icon-sun.svg', 32px, 32px);
@@ -52,7 +52,7 @@
             }
         }
         &:nth-child(3) span{
-            @include serisesClassisc-before('/week4/images/icon-thunder.svg', 48px, 48px);
+            @include serisesClassisc-before('/week4/images/icon-thunder.svg', 55px, 48px);
 
             @include pad{
                 @include serisesClassisc-before('/week4/images/icon-thunder.svg', 32px, 32px);
