@@ -1587,4 +1587,62 @@ h4, h4 {
     font-size: 32px;
   }
 }
+
+.recommend__title {
+  text-align: center;
+}
+
+.recommend__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommend__item {
+  width: 255px;
+  border: 1px solid #DEE2E6;
+}
+
+.recommend__item:nth-child(1) .recommend__card-img {
+  background-image: url("/week4/images/rec-1.png");
+  width: 255px;
+  height: 256px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recommend__item:nth-child(2) .recommend__card-img {
+  background-image: url("/week4/images/rec-2.png");
+  width: 255px;
+  height: 256px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recommend__item:nth-child(3) .recommend__card-img {
+  background-image: url("/week4/images/rec-3.png");
+  width: 255px;
+  height: 256px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recommend__item:nth-child(4) .recommend__card-img {
+  background-image: url("/week4/images/rec-4.png");
+  width: 255px;
+  height: 256px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recommend__card-content {
+  padding: 14px 16px;
+}
 /*# sourceMappingURL=all.css.map */

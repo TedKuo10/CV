@@ -1,0 +1,30 @@
+.recommend{
+
+    &__title{
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__item{
+        width: 255px;
+        border: 1px solid #DEE2E6;
+        $recommend-imgs: '/week4/images/rec-1.png', '/week4/images/rec-2.png', '/week4/images/rec-3.png', '/week4/images/rec-4.png';
+
+        @each $img in $recommend-imgs{
+            $i: index($recommend-imgs, $img);
+            &:nth-child(#{$i}) .recommend__card-img{
+                @include bg-images($img, 255px, 256px);
+            }
+        }
+    }
+
+    &__card-content{
+        padding: 14px 16px;
+    }
+
+}
