@@ -482,6 +482,18 @@ h4, h4 {
   color: #aa0601;
 }
 
+.txt-color-dark {
+  color: #212529;
+}
+
+.txt-color-light {
+  color: #707070;
+}
+
+.txt-color {
+  color: #000000;
+}
+
 .font-roboto {
   font-family: "Roboto";
 }
@@ -524,6 +536,10 @@ h4, h4 {
 
 .fw-9 {
   font-weight: 900;
+}
+
+.form__input-content {
+  padding: 14px 16px;
 }
 
 .logo {
@@ -1588,8 +1604,38 @@ h4, h4 {
   }
 }
 
+.recommend {
+  padding: 64px 0;
+}
+
+@media (max-width: 992px) {
+  .recommend {
+    padding: 40px 0 12px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend {
+    padding: 32px 0 16px 0;
+  }
+}
+
 .recommend__title {
   text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .recommend__title {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .recommend__list {
@@ -1599,11 +1645,27 @@ h4, h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .recommend__item {
   width: 255px;
   border: 1px solid #DEE2E6;
+}
+
+@media (max-width: 992px) {
+  .recommend__item {
+    width: 330px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend__item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 .recommend__item:nth-child(1) .recommend__card-img {
@@ -1615,6 +1677,28 @@ h4, h4 {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 992px) {
+  .recommend__item:nth-child(1) .recommend__card-img {
+    background-image: url("/week4/images/rec-1.png");
+    width: 330px;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend__item:nth-child(1) .recommend__card-img {
+    background-image: url("/week4/images/rec-1.png");
+    width: 100%;
+    height: 259px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .recommend__item:nth-child(2) .recommend__card-img {
   background-image: url("/week4/images/rec-2.png");
   width: 255px;
@@ -1622,6 +1706,28 @@ h4, h4 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .recommend__item:nth-child(2) .recommend__card-img {
+    background-image: url("/week4/images/rec-2.png");
+    width: 330px;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend__item:nth-child(2) .recommend__card-img {
+    background-image: url("/week4/images/rec-2.png");
+    width: 100%;
+    height: 259px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .recommend__item:nth-child(3) .recommend__card-img {
@@ -1633,6 +1739,28 @@ h4, h4 {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 992px) {
+  .recommend__item:nth-child(3) .recommend__card-img {
+    background-image: url("/week4/images/rec-3.png");
+    width: 330px;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend__item:nth-child(3) .recommend__card-img {
+    background-image: url("/week4/images/rec-3.png");
+    width: 100%;
+    height: 259px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .recommend__item:nth-child(4) .recommend__card-img {
   background-image: url("/week4/images/rec-4.png");
   width: 255px;
@@ -1642,7 +1770,60 @@ h4, h4 {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 992px) {
+  .recommend__item:nth-child(4) .recommend__card-img {
+    background-image: url("/week4/images/rec-4.png");
+    width: 330px;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .recommend__item:nth-child(4) .recommend__card-img {
+    background-image: url("/week4/images/rec-4.png");
+    width: 100%;
+    height: 259px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .recommend__card-content {
   padding: 14px 16px;
+}
+
+@media (max-width: 992px) {
+  .recommend__card-content {
+    padding: 16px;
+  }
+}
+
+.recommend__card-title {
+  margin-bottom: 7px;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 992px) {
+  .recommend__card-title {
+    margin-bottom: 16px;
+  }
+}
+
+.recommend__card-description {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .recommend__card-description {
+    margin-bottom: 16px;
+  }
+}
+
+.recommend__card-time {
+  font-size: 0.875rem;
 }
 /*# sourceMappingURL=all.css.map */
