@@ -538,8 +538,36 @@ h4, h4 {
   font-weight: 900;
 }
 
+.form {
+  position: relative;
+}
+
+.form__label {
+  font-weight: 600;
+}
+
 .form__input-content {
   padding: 14px 16px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.form__textarea-content {
+  padding: 14px 16px;
+  font-size: 16px;
+  width: 100%;
+  resize: none;
+}
+
+.form__submit {
+  display: block;
+  margin: 42px auto 0 auto;
+  width: 350px;
+  height: 54px;
+  background: #aa0601;
+  border: 0px;
+  color: #ffffff;
 }
 
 .logo {
@@ -1825,5 +1853,30 @@ h4, h4 {
 
 .recommend__card-time {
   font-size: 0.875rem;
+}
+
+.row-form {
+  max-width: 730px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.contact__description {
+  width: 100%;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=all.css.map */
