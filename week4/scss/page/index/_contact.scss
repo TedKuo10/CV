@@ -1,5 +1,9 @@
 .row-form{
     max-width: 730px;
+
+    @include pad{
+        max-width: 450px;
+    }
 }
 
 .contact{
@@ -10,9 +14,34 @@
     padding-top: 64px;
     padding-bottom: 80px;
 
+    @include pad{
+        padding: 40px 0;
+    }
+
+    &__title{
+        margin-bottom: 24px;
+        @include pad{
+            margin-bottom: 16px;
+        }
+        @include mobile{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
     &__description{
         width: 100%;
         font-size: $font-size-m;
         margin-bottom: 20px;
+
+        @include pad{
+            margin-bottom: 12px;
+            font-size: $font-size-base;
+        }
+
+        @include mobile{
+            margin-bottom: 8px;
+        }
     }
+
 }

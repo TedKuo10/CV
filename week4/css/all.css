@@ -538,26 +538,50 @@ h4, h4 {
   font-weight: 900;
 }
 
-.form {
-  position: relative;
-}
-
 .form__label {
   font-weight: 600;
 }
 
+@media (max-width: 992px) {
+  .form__label {
+    font-size: 0.875rem;
+  }
+}
+
 .form__input-content {
   padding: 14px 16px;
-  font-size: 16px;
+  font-size: 1rem;
   width: 100%;
   margin-bottom: 16px;
 }
 
+@media (max-width: 992px) {
+  .form__input-content {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+  }
+}
+
 .form__textarea-content {
   padding: 14px 16px;
-  font-size: 16px;
+  font-size: 1rem;
   width: 100%;
   resize: none;
+}
+
+@media (max-width: 992px) {
+  .form__textarea-content {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+  }
+}
+
+.form__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__submit {
@@ -565,9 +589,28 @@ h4, h4 {
   margin: 42px auto 0 auto;
   width: 350px;
   height: 54px;
+  font-size: 1rem;
   background: #aa0601;
   border: 0px;
   color: #ffffff;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .form__submit {
+    margin: 20px auto 0 auto;
+    width: 200px;
+    height: 36px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__submit {
+    margin: 24px auto 0 auto;
+    width: 165px;
+    font-size: 0.875rem;
+  }
 }
 
 .logo {
@@ -1859,6 +1902,12 @@ h4, h4 {
   max-width: 730px;
 }
 
+@media (max-width: 992px) {
+  .row-form {
+    max-width: 450px;
+  }
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1874,9 +1923,45 @@ h4, h4 {
   padding-bottom: 80px;
 }
 
+@media (max-width: 992px) {
+  .contact {
+    padding: 40px 0;
+  }
+}
+
+.contact__title {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+  .contact__title {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .contact__description {
   width: 100%;
   font-size: 1.25rem;
   margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .contact__description {
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__description {
+    margin-bottom: 8px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
