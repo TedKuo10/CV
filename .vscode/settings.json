@@ -1,4 +1,7 @@
 {
+    "blueprint.templatesPath": [
+        "./.vscode/blueprint-templates"
+    ],
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",

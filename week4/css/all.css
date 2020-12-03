@@ -1964,4 +1964,26 @@ h4, h4 {
     margin-bottom: 8px;
   }
 }
+
+.tabs {
+  padding: 0 267px;
+}
+
+.tabs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabs__item {
+  width: 33.333%;
+  text-align: center;
+}
+
+.tabs__link {
+  text-decoration: none;
+}
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,19 @@
+.tabs{
+    padding: 0 267px;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        width: 33.333%;
+        text-align: center;
+    }
+
+    &__link{
+        text-decoration: none;
+        
+    }
+
+}
