@@ -1966,7 +1966,8 @@ h4, h4 {
 }
 
 .tabs {
-  padding: 0 267px;
+  max-width: 1386px;
+  margin: 0 auto;
 }
 
 .tabs__list {
@@ -1979,11 +1980,92 @@ h4, h4 {
 }
 
 .tabs__item {
-  width: 33.333%;
+  width: calc(100% / 3);
   text-align: center;
+  padding: 24px 72px;
+  border: 1px solid #DCDCDC;
+}
+
+@media (max-width: 992px) {
+  .tabs__item {
+    padding: 16px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs__item {
+    padding: 8px 9px;
+  }
+}
+
+.tabs__item .tabs__link::before {
+  content: "";
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  background-image: url("/week4/images/icon-diamond-black.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: text-top;
+  margin-right: 8px;
+  background-position: center;
+}
+
+@media (max-width: 992px) {
+  .tabs__item .tabs__link::before {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs__item .tabs__link::before {
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+  }
+}
+
+.tabs__item:nth-child(2) .tabs__link::before {
+  background-image: url("/week4/images/icon-sun-black.svg");
+}
+
+.tabs__item:nth-child(3) .tabs__link::before {
+  background-image: url("/week4/images/icon-thunder-black.svg");
 }
 
 .tabs__link {
   text-decoration: none;
+  font-size: 42px;
+  color: black;
+  font-family: "Roboto";
+}
+
+@media (max-width: 992px) {
+  .tabs__link {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs__link {
+    font-size: 14px;
+  }
+}
+
+.tabs .active {
+  border-bottom: 16px solid #aa0601;
+}
+
+@media (max-width: 992px) {
+  .tabs .active {
+    border-bottom: 8px solid #aa0601;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs .active {
+    border-bottom: 4px solid #aa0601;
+  }
 }
 /*# sourceMappingURL=all.css.map */

@@ -1,5 +1,6 @@
 .tabs{
-    padding: 0 267px;
+    max-width: 1386px;
+    margin: 0 auto;
 
     &__list{
         display: flex;
@@ -7,13 +8,78 @@
     }
 
     &__item{
-        width: 33.333%;
+        width: calc(100% / 3);
         text-align: center;
+        padding: 24px 72px;
+        border: 1px solid #DCDCDC;
+
+        @include pad{
+            padding: 16px 20px;
+        }
+
+        @include mobile{
+            padding: 8px 9px;
+        }
+
+        .tabs__link::before{
+            content: "";
+            display: inline-block;
+            height: 48px;
+            width: 48px;
+            background-image: url("/week4/images/icon-diamond-black.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            vertical-align: text-top;
+            margin-right: 8px;
+            background-position: center;
+            @include pad{
+                height: 32px;
+                width: 32px;
+            }
+
+            @include mobile{
+                height: 15px;
+                width: 15px;
+                margin-right: 3px;
+            }
+        }
+
+        &:nth-child(2) .tabs__link::before{
+            background-image: url("/week4/images/icon-sun-black.svg");
+        }
+
+        &:nth-child(3) .tabs__link::before{
+            background-image: url("/week4/images/icon-thunder-black.svg");
+        }
+
+
+
     }
 
     &__link{
         text-decoration: none;
-        
+        font-size: 42px;
+        color: black;
+        font-family: $font-family-roboto;
+
+        @include pad{
+            font-size: 28px;
+        }
+
+        @include mobile{
+            font-size: 14px;
+        }
+
+    }
+
+    .active {
+        border-bottom: 16px solid $color-primary;
+        @include pad{
+            border-bottom: 8px solid $color-primary;
+        }
+        @include mobile{
+            border-bottom: 4px solid $color-primary;
+        }
     }
 
 }
