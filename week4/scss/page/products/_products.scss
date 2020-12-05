@@ -10,7 +10,7 @@
     &__item{
         width: calc(100% / 3);
         text-align: center;
-        padding: 24px 72px;
+        padding: 24px 51px;
         border: 1px solid #DCDCDC;
 
         @include pad{
@@ -82,4 +82,48 @@
         }
     }
 
+}
+
+.photos{
+    display: flex;
+
+    &__hero{
+        width: calc(100% / 2 - 15px);
+        // height: 309px;
+        object-fit: cover;
+
+        @include pad{
+            width: 50%;
+        }
+    }
+    &__hero:nth-child(1){
+        margin-right: 30px;
+
+        @include pad{
+            margin-right: 0;
+        }
+    }
+}
+
+.products{
+
+    &__link{
+        text-decoration: none;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+
+}
+
+.list-group:nth-child(1){
+
+    background-color: #5f3e2d;
+    width: 19px;
+    height: 19px;
 }

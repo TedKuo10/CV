@@ -1,0 +1,15 @@
+.section{
+
+    &-title{
+        font-size: 42px;
+        font-weight: 500;
+        font-family: $font-family-roboto;
+        text-align: center;
+    }
+
+    &-subTitle{
+        font-size: 32px;
+        font-weight: 550;
+        text-align: center;
+    }
+}
