@@ -632,6 +632,8 @@ h4, h4 {
 .card-img {
   width: 350px;
   height: 224px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 992px) {
@@ -1937,7 +1939,7 @@ h4, h4 {
 }
 
 .recommend__item:nth-child(1) .recommend__card-img {
-  background-image: url("/week4/images/rec-1.png");
+  background-image: url("../images/rec-1.png");
   width: 255px;
   height: 256px;
   background-position: center;
@@ -1947,7 +1949,7 @@ h4, h4 {
 
 @media (max-width: 992px) {
   .recommend__item:nth-child(1) .recommend__card-img {
-    background-image: url("/week4/images/rec-1.png");
+    background-image: url("../images/rec-1.png");
     width: 330px;
     height: 256px;
     background-position: center;
@@ -1958,7 +1960,7 @@ h4, h4 {
 
 @media (max-width: 767px) {
   .recommend__item:nth-child(1) .recommend__card-img {
-    background-image: url("/week4/images/rec-1.png");
+    background-image: url("../images/rec-1.png");
     width: 100%;
     height: 259px;
     background-position: center;
@@ -1968,7 +1970,7 @@ h4, h4 {
 }
 
 .recommend__item:nth-child(2) .recommend__card-img {
-  background-image: url("/week4/images/rec-2.png");
+  background-image: url("../images/rec-2.png");
   width: 255px;
   height: 256px;
   background-position: center;
@@ -1978,7 +1980,7 @@ h4, h4 {
 
 @media (max-width: 992px) {
   .recommend__item:nth-child(2) .recommend__card-img {
-    background-image: url("/week4/images/rec-2.png");
+    background-image: url("../images/rec-2.png");
     width: 330px;
     height: 256px;
     background-position: center;
@@ -1989,7 +1991,7 @@ h4, h4 {
 
 @media (max-width: 767px) {
   .recommend__item:nth-child(2) .recommend__card-img {
-    background-image: url("/week4/images/rec-2.png");
+    background-image: url("../images/rec-2.png");
     width: 100%;
     height: 259px;
     background-position: center;
@@ -1999,7 +2001,7 @@ h4, h4 {
 }
 
 .recommend__item:nth-child(3) .recommend__card-img {
-  background-image: url("/week4/images/rec-3.png");
+  background-image: url("../images/rec-3.png");
   width: 255px;
   height: 256px;
   background-position: center;
@@ -2009,7 +2011,7 @@ h4, h4 {
 
 @media (max-width: 992px) {
   .recommend__item:nth-child(3) .recommend__card-img {
-    background-image: url("/week4/images/rec-3.png");
+    background-image: url("../images/rec-3.png");
     width: 330px;
     height: 256px;
     background-position: center;
@@ -2020,7 +2022,7 @@ h4, h4 {
 
 @media (max-width: 767px) {
   .recommend__item:nth-child(3) .recommend__card-img {
-    background-image: url("/week4/images/rec-3.png");
+    background-image: url("../images/rec-3.png");
     width: 100%;
     height: 259px;
     background-position: center;
@@ -2030,7 +2032,7 @@ h4, h4 {
 }
 
 .recommend__item:nth-child(4) .recommend__card-img {
-  background-image: url("/week4/images/rec-4.png");
+  background-image: url("../images/rec-4.png");
   width: 255px;
   height: 256px;
   background-position: center;
@@ -2040,7 +2042,7 @@ h4, h4 {
 
 @media (max-width: 992px) {
   .recommend__item:nth-child(4) .recommend__card-img {
-    background-image: url("/week4/images/rec-4.png");
+    background-image: url("../images/rec-4.png");
     width: 330px;
     height: 256px;
     background-position: center;
@@ -2051,7 +2053,7 @@ h4, h4 {
 
 @media (max-width: 767px) {
   .recommend__item:nth-child(4) .recommend__card-img {
-    background-image: url("/week4/images/rec-4.png");
+    background-image: url("../images/rec-4.png");
     width: 100%;
     height: 259px;
     background-position: center;

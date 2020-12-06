@@ -13,6 +13,7 @@
     &-img{
         width: 350px;
         height: 224px;
+        object-fit: cover;
 
         @include pad{
             width: 330px;

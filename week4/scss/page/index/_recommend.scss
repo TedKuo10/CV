@@ -42,7 +42,7 @@
         }
 
         border: 1px solid #DEE2E6;
-        $recommend-imgs: '/week4/images/rec-1.png', '/week4/images/rec-2.png', '/week4/images/rec-3.png', '/week4/images/rec-4.png';
+        $recommend-imgs: '../images/rec-1.png', '../images/rec-2.png', '../images/rec-3.png', '../images/rec-4.png';
 
         @each $img in $recommend-imgs{
             $i: index($recommend-imgs, $img);
