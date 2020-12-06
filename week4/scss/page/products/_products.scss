@@ -26,7 +26,7 @@
             display: inline-block;
             height: 48px;
             width: 48px;
-            background-image: url("/week4/images/icon-diamond-black.svg");
+            background-image: url("../images/icon-diamond-black.svg");
             background-repeat: no-repeat;
             background-size: contain;
             vertical-align: text-top;
@@ -45,11 +45,11 @@
         }
 
         &:nth-child(2) .tabs__link::before{
-            background-image: url("/week4/images/icon-sun-black.svg");
+            background-image: url("../images/icon-sun-black.svg");
         }
 
         &:nth-child(3) .tabs__link::before{
-            background-image: url("/week4/images/icon-thunder-black.svg");
+            background-image: url("../images/icon-thunder-black.svg");
         }
 
 
