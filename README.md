@@ -8,3 +8,6 @@ https://tedkuo10.github.io/hexschool-layout202010/week2/index.html
 
 Week3：RWD 網站<br>
 https://tedkuo10.github.io/hexschool-layout202010/week3/index.html
+
+Week4：多頁式 RWD 網站<br>
+https://tedkuo10.github.io/hexschool-layout202010/week4/index.html
