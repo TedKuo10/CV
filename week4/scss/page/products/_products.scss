@@ -107,6 +107,16 @@
 
 .products{
 
+    padding: 88px 0px 192px 0px;
+
+    @include pad{
+        padding: 40px 0px 104px 0px;
+    }
+
+    @include mobile{
+        padding: 30px 0px 56px 0px;
+    }
+
     &__link{
         text-decoration: none;
     }
@@ -117,13 +127,29 @@
         flex-wrap: wrap;
     }
 
-
-
 }
 
-.list-group:nth-child(1){
+
+.list-group{
+    display: flex;
+}
+
+.list-group-item{
+    margin-right: 8px;
+}
+
+.list-group-item:nth-child(1){
 
     background-color: #5f3e2d;
+    border-radius: 4px;
+    width: 19px;
+    height: 19px;
+}
+
+.list-group-item:nth-child(2){
+
+    background-color: #B75929;
+    border-radius: 4px;
     width: 19px;
     height: 19px;
 }
