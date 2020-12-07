@@ -11,3 +11,6 @@ https://tedkuo10.github.io/hexschool-layout202010/week3/index.html
 
 Week4：多頁式 RWD 網站<br>
 https://tedkuo10.github.io/hexschool-layout202010/week4/index.html
+
+Week7：視差滾動<br>
+https://tedkuo10.github.io/hexschool-layout202010/week7/index.html
