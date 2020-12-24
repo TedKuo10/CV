@@ -44,6 +44,11 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
+// custom project
+$green-primary: #2A8356 !default;
+$green-border:#CDDDCD !default;
+$green-light: #EDF4EE !default;
+
 $colors: () !default;
 $colors: map-merge(
   (
@@ -64,8 +69,8 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $green-primary !default; // $blue
+$secondary:     $green-light !default; // $gray-600
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -83,7 +88,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "greenBorder": $green-border
   ),
   $theme-colors
 );
@@ -142,7 +148,7 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    5: ($spacer * 2)
   ),
   $spacers
 );
