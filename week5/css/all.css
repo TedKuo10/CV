@@ -161,7 +161,7 @@ a {
 }
 
 a:hover {
-  color: #174930;
+  color: #2A8356;
   text-decoration: none;
 }
 
@@ -3440,7 +3440,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #174930;
+  color: #2A8356;
   text-decoration: none;
 }
 
@@ -5453,7 +5453,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #174930;
+  color: #2A8356;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -10973,5 +10973,14 @@ a.text-greenBorder:hover, a.text-greenBorder:focus {
 
 .sidebar a {
   display: block;
+}
+
+.nav-link--active {
+  color: #2A8356;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
 }
 /*# sourceMappingURL=all.css.map */
