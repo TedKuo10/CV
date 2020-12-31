@@ -13,13 +13,13 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row flex-md-nowrap">
             <div class="col-md-2 bg-secondary pt-5 sidebar">
                 <nav class="d-flex flex-column h-100">
                     <a href="#" class="ml-5 mb-5">
                         <img src="/week5/images/logo-ANSWER.svg" alt="">
                     </a>
-                    <ul class="nav list-unstyled">
+                    <ul class="list-unstyled flex-grow-1">
                         <!-- flex-grow-1 -->
                         <li class="nav-item">
                             <a href="#" class="nav-link mb-2 pl-5 py-2">
@@ -36,7 +36,7 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link mb-2 pl-5 py-2 nav-link--active">
                                 <span class="material-icons mr-3 align-middle">assignment</span>
-                                <span class="align-middle font-weight-bold">AssignmentA</span>
+                                <span class="align-middle font-weight-bold">Assignment</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -58,22 +58,73 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="d-flex">
-                        <img src="/week5/images/andychen.jpeg" alt="" class="avatar rounded-circle mr-3">
-                        <div class="">
-                            <p class="">Andy Chen</p>
-                            <p class="">andy0401@mail.com</p>
+                    <div class="d-flex ml-5 mb-5">
+                        <!-- fixed-bottom -->
+                        <div class="avatar rounded-circle mr-3">
+                            <img src="/week5/images/andychen.jpeg" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <p class="font-weight-bold mb-0">Andy Chen</p>
+                            <p class="text-muted font-size-sm">andy0401@mail.com</p>
                         </div>
                     </div>
                 </nav>
             </div>
-            <div class="col-md-10">
-
-
+            <div class="col-md-10 pt-5 px-5">
+                <header class="mb-5">
+                    <div class="d-flex align-items-center">
+                        <h1 class="h4 font-weight-bold mr-5 mb-0">Assignment</h1>
+                        <div class="dropdown">
+                            <button class="btn font-weight-bold" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All Courses
+                                <span class="material-icons text-primary align-middle">expand_more</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <button class="dropdown-item" type="button">HTML</button>
+                                <button class="dropdown-item" type="button">CSS</button>
+                                <button class="dropdown-item" type="button">JavaScript</button>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled d-flex align-items-center ml-auto mb-0">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link py-0 line-height-1">
+                                    <span class="material-icons">search</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link py-0 line-height-1">
+                                    <span class="material-icons">notifications_active</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <main>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn font-weight-bold" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All(4)
+                                <span class="material-icons text-primary align-middle">expand_more</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">Chapter Assignment 1</button>
+                                <button class="dropdown-item" type="button">Chapter Assignment 2</button>
+                                <button class="dropdown-item" type="button">Final Assignment</button>
+                            </div>
+                        </div>
+                        <p class="text-light font-size-xs">2 comments</p>
+                    </div>
+                </main>
             </div>
         </div>
 
 
     </div>
+
+
+S
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>
