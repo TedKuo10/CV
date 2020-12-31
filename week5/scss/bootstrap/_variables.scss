@@ -75,7 +75,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         #0000009A !default; // $gray-100 !default;
+$light:         rgba(0,0,0,0.6) !default; // $gray-100
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -1017,7 +1017,7 @@ $progress-bar-transition:           width .6s ease !default;
 
 $list-group-color:                  null !default;
 $list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-color:           $green-light; // rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
@@ -1025,9 +1025,10 @@ $list-group-item-padding-y:         .75rem !default;
 $list-group-item-padding-x:         1.25rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
-$list-group-active-border-color:    $list-group-active-bg !default;
+$list-group-active-color:           black; // $component-active-color !default;
+// $list-group-active-bg:              $component-active-bg !default;
+$list-group-active-bg:              $green-light !default;
+$list-group-active-border-color:    $green-light; //$list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
