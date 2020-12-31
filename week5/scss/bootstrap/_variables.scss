@@ -1017,7 +1017,7 @@ $progress-bar-transition:           width .6s ease !default;
 
 $list-group-color:                  null !default;
 $list-group-bg:                     $white !default;
-$list-group-border-color:           $green-light; // rgba($black, .125) !default;
+$list-group-border-color:           #CDDDCD; // rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
@@ -1028,7 +1028,7 @@ $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           black; // $component-active-color !default;
 // $list-group-active-bg:              $component-active-bg !default;
 $list-group-active-bg:              $green-light !default;
-$list-group-active-border-color:    $green-light; //$list-group-active-bg !default;
+$list-group-active-border-color:    #CDDDCD; //$list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
