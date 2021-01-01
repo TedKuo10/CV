@@ -504,7 +504,9 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #2A8356;
+  background: #EDF4EE;
+  padding: 2px 4px;
   word-wrap: break-word;
 }
 

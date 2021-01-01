@@ -1,7 +1,9 @@
 // Inline code
 code {
   @include font-size($code-font-size);
-  color: $code-color;
+  color: #2A8356; // $code-color;
+  background: #EDF4EE;
+  padding: 2px 4px;
   word-wrap: break-word;
 
   // Streamline the style when inside anchors to avoid broken underline and more

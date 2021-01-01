@@ -115,9 +115,9 @@
                         <p class="text-light font-size-xs mb-0">2 comments</p>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4 pr-0">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action active px-3" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                                <a class="list-group-item list-group-item-action active px-3" id="list-1" data-toggle="list" href="#list-1" role="tab" aria-controls="list-1">
                                     <div class="d-flex justify-content-between mb-1">
                                         <p class="font-size-xs">Chapter Assignment 2</p>
                                         <p class="font-size-xs">4 hrs ago</p>
@@ -127,7 +127,7 @@
                                         <p class="font-size-xs text-light">Emily Wang</p>
                                     </div>
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                                <a class="list-group-item list-group-item-action" id="list-2" data-toggle="list" href="#list-2" role="tab" aria-controls="list-2">
                                     <div class="d-flex justify-content-between mb-1">
                                         <p class="font-size-xs">Chapter Assignment 1</p>
                                         <p class="font-size-xs">12 hrs ago</p>
@@ -137,7 +137,7 @@
                                         <p class="font-size-xs text-light">David Xu</p>
                                     </div>
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                                <a class="list-group-item list-group-item-action" id="list-3" data-toggle="list" href="#list-3" role="tab" aria-controls="list-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <p class="font-size-xs">Final Assignment</p>
                                         <p class="font-size-xs">18 hrs ago</p>
@@ -147,7 +147,7 @@
                                         <p class="font-size-xs text-light">Tony Wei</p>
                                     </div>
                                 </a>
-                                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                                <a class="list-group-item list-group-item-action" id="list-4" data-toggle="list" href="#list-4" role="tab" aria-controls="list-4">
                                     <div class="d-flex justify-content-between mb-1">
                                         <p class="font-size-xs">Final Assignment</p>
                                         <p class="font-size-xs">19 hrs ago</p>
@@ -160,9 +160,44 @@
                             </div>
                         </div>
                         <div class="col-8">
-
-
-                            
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-1" role="tabpanel" aria-labelledby="list-1">
+                                    <div class="card">
+                                        <div class="card-header bg-secondary d-flex justify-content-between pr-0">
+                                            <div>
+                                                <p class="font-size-xs mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                                                <p class="font-weight-bold">Please check this file…</p>
+                                            </div>
+                                            <div class="btn-group dropleft">
+                                                <button class="btn btn-secondary" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="material-icons">more_vert</span>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                                    <button class="dropdown-item" type="button">edit</button>
+                                                    <button class="dropdown-item" type="button">delete</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="media">
+                                            <div class="avatar rounded-circle mr-3">
+                                                <img src="/week5/images/emilywang.jpeg" class=" img-fluid" alt="">
+                                            </div>
+                                            <div class="media-body border-bottom pb-3">
+                                                <h6 class="font-weight-bold mb-1">Emily Wang</h6>
+                                                <p class="text-light font-size-xs">10:38 AM (4 hours ago)</p>
+                                                <p class="my-3 pr-3 font-size-sm">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br>What is the gap or extra space below image?
+                                                </p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- others -->
+                                <div class="tab-pane fade" id="list-2" role="tabpanel" aria-labelledby="list-2">...</div>
+                                <div class="tab-pane fade" id="list-3" role="tabpanel" aria-labelledby="list-3">...</div>
+                                <div class="tab-pane fade" id="list-4" role="tabpanel" aria-labelledby="list-4">...</div>
+                            </div>
                         </div>
                     </div>
                 </main>
